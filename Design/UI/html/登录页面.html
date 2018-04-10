@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>电力在线</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<script src="../scripts/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+ var w=window.innerWidth
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
+
+    var h=window.innerHeight
+    || document.documentElement.clientHeight
+    || document.body.clientHeight;
+
+//加载时适应浏览器高度
+$(document).ready(function() {
+    //模块尺寸
+
+	$('#body').css('height',h );
+	//改变窗体大小时适应浏览器高度
+$(window).resize(function() {
+    //模块尺寸
+
+	$('#body').css('height', h );
+	
+ 
+});
+        
+});
+
+</script>
+<style type="text/css">
+:root{ background:#eeedeb;} 
+</style>
+<body>
+<div class="wrapper">
+	<div class="background-contain" id="body">
+	<img src="../images/bgimg02.jpg" class="body-bg" alt="" />
+		<div class="login_content">
+			<p ><img src="../images/login_logo.png"/> </p>
+			<div class="login_box" >
+				<p><img src="../images/user_log.png"/> </p>
+				<input type="text" placeholder="请输入用户名" class="username" style="margin-top:20px;" />
+				<input type="text" placeholder="请输入密码" class="password" />
+				<div class="select_password">
+					<input type="checkbox" class="fl"/> 下次自动登录
+					<a href="">忘记密码</a> 
+				</div>
+				<div class="clearfix"></div>
+				<button>登录</button>
+				
+			</div>
+			
+		</div>
+
+	</div>	
+</div>
+</body>
+</html>
+<style type="text/css">
+ol,ul{list-style:none;padding: 0;}
+a{ color:#333132;text-decoration:none;}
+body{
+	padding: 0;
+	margin: 0;
+	font-family:微软雅黑, Arial, Helvetica, sans-serif; font-size:14px; color:#494949;
+	.fl{float:left;display:inline;}
+	.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+}
+.clearfix{*height:1%}
+</style>
